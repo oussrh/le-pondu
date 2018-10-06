@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+
+<body>
+    <div id="container">
+        <div id="popupStart">
+            <div id="formStart">
+                <strong id="msgStart">Entrez le mot à deviner</strong>
+                <input id="leMotInput" type="text" placeholder="Votre mot" maxlength="9" required/>
+                <input id="indiceInput" type="text" placeholder="Indice (optionnel)" />
+                <button id="letPlay">Jouer</button>
+            </div>
+        </div>
+        <div id="popupEnd">
+            <div id="formEnd">
+                <div id="msgEnd"></div>
+                <button id="replay">Rejouer</button>
+            </div>
+        </div>
+        <header>
+            <section id="indice">
+                <div id="indiceTitre">Indice</div>
+                <div id="indiceArea"></div>
+            </section>
+        </header>
+        <main>
+           
+            <section id="leCon">
+
+            </section>
+            <section id="lettreInput">
+                <section id="dejaDevine"></section>
+                <input id="lettre" value="" type="text" maxlength="1" />
+                <section id="Faute"></section>
+            </section>
+        </main>
+        <footer>
+            <span id="nbrErreurs">
+                0 erreur
+            </span>
+        </footer>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
